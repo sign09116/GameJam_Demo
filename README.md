@@ -1,7 +1,7 @@
 # GameJam_Demo
  GameJam_試作品
  這是一款音樂向作品
- https://sign09116.github.io/GameJam_Demo/GameJamtDemo/GameJamtDemo_web/
+ https://sign09116.github.io/GameJam_Demo/GameJamtDemo/GameJamtDemo_web_02/
 遊戲玩法
 
 點擊下方方塊會生出帶有聲音的方塊
