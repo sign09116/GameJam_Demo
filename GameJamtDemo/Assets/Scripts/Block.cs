@@ -9,7 +9,7 @@ public class Block : MonoBehaviour
     [SerializeField] AudioSource audioSource;
     Vector2 offset;
     Vector2 curPosition;
-
+    
     private void Update()
     {
         transform.position = new Vector2( Mathf.Clamp(transform.position.x, -7.35f, 7.35f), Mathf.Clamp(transform.position.y, -4.48f, 4.48f));
@@ -33,7 +33,9 @@ public class Block : MonoBehaviour
     {
         if (hit.collider.CompareTag("Player"))
         {
+            scencemanager.instance.Count++;
             audioSource.PlayOneShot(clip);
+            scencemanager.instance.audlist.Add(clip);
         }
     }
     

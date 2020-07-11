@@ -93,7 +93,7 @@ Rigidbody2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410591151014649060}
   m_BodyType: 0
-  m_Simulated: 1
+  m_Simulated: 0
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
@@ -135,4 +135,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Ballrig: {fileID: 410591151014649061}
   maincameral: {fileID: 0}
-  speed: 5
+  speed: 20

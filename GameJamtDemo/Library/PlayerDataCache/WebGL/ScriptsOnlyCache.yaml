@@ -8,6 +8,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
+    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
@@ -62,27 +63,27 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11168}
+      Script: {instanceID: 11170}
     - Class: 114
-      Script: {instanceID: 11456}
+      Script: {instanceID: 11458}
     - Class: 114
-      Script: {instanceID: 11510}
+      Script: {instanceID: 11512}
     - Class: 114
-      Script: {instanceID: 11608}
+      Script: {instanceID: 11610}
     - Class: 114
-      Script: {instanceID: 12170}
+      Script: {instanceID: 12172}
     - Class: 114
-      Script: {instanceID: 12868}
+      Script: {instanceID: 12870}
     - Class: 114
-      Script: {instanceID: 13624}
+      Script: {instanceID: 13626}
     - Class: 114
-      Script: {instanceID: 14234}
+      Script: {instanceID: 13806}
     - Class: 114
-      Script: {instanceID: 19236}
+      Script: {instanceID: 13936}
     - Class: 114
-      Script: {instanceID: 23090}
+      Script: {instanceID: 14240}
     - Class: 114
-      Script: {instanceID: 24162}
+      Script: {instanceID: 14300}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -478,6 +479,12 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: 683c6aaa576d44fa00b324c2e5294dc2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Ball
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -488,6 +495,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: e32b6b966766504ef958faeaf0382967
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: scencemanager
   - hash:
       serializedVersion: 2
       Hash: 21d73eda81c18eacd2c91ad5dfaf2e32
@@ -574,6 +587,12 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
+      Hash: 55e3d7a7a2018520e3bd5cd563d97cc8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Block
+  - hash:
+      serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -584,24 +603,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 683c6aaa576d44fa00b324c2e5294dc2
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Ball
-  - hash:
-      serializedVersion: 2
-      Hash: 55e3d7a7a2018520e3bd5cd563d97cc8
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Block
-  - hash:
-      serializedVersion: 2
-      Hash: 3ea19dc2fddcd7ac6578877e3764e7cd
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: scencemanager
   platform: 20
   scenePathNames:
   - Assets/Scenes/Demo.unity
