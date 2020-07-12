@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Ball
     - Block
+    - DeadZone
     - scencemanager
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -31,6 +32,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Outline
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/Demo.unity:
@@ -63,27 +65,31 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11170}
+      Script: {instanceID: 11172}
     - Class: 114
-      Script: {instanceID: 11458}
+      Script: {instanceID: 11460}
     - Class: 114
-      Script: {instanceID: 11512}
+      Script: {instanceID: 11514}
     - Class: 114
-      Script: {instanceID: 11610}
+      Script: {instanceID: 11612}
     - Class: 114
-      Script: {instanceID: 12172}
+      Script: {instanceID: 12174}
     - Class: 114
-      Script: {instanceID: 12870}
+      Script: {instanceID: 12872}
     - Class: 114
-      Script: {instanceID: 13626}
+      Script: {instanceID: 13628}
     - Class: 114
-      Script: {instanceID: 13806}
+      Script: {instanceID: 13808}
     - Class: 114
-      Script: {instanceID: 13936}
+      Script: {instanceID: 13938}
     - Class: 114
-      Script: {instanceID: 14240}
+      Script: {instanceID: 14140}
     - Class: 114
-      Script: {instanceID: 14300}
+      Script: {instanceID: 14242}
+    - Class: 114
+      Script: {instanceID: 14302}
+    - Class: 114
+      Script: {instanceID: 19640}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -497,7 +503,7 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: e32b6b966766504ef958faeaf0382967
+      Hash: 76ac9012268a4e6a863d3a3ed2a479b7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: scencemanager
@@ -603,7 +609,13 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 361e51cea4eb8ebe1734af82fee607a8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DeadZone
   platform: 20
   scenePathNames:
   - Assets/Scenes/Demo.unity
-  playerPath: E:/GameJamtDemo/GameJamtDemo_web
+  playerPath: C:/Users/user/Desktop/GameJam_Demo/GameJamtDemo/GameJamtDemo_web_02

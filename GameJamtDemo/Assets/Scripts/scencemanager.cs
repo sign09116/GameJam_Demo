@@ -7,6 +7,7 @@ public class scencemanager : MonoBehaviour
 {
     public static scencemanager instance;
     [SerializeField] Button startbutton;
+    [SerializeField] Transform Firepoint;
     public Button RePlaybutton;
     [SerializeField] Button RePlaySoundbutton;
     public int Count;
@@ -15,7 +16,7 @@ public class scencemanager : MonoBehaviour
     [SerializeField] CanvasGroup canvasGroup;
     public List<GameObject> BlockList = new List<GameObject>();
     public bool isplay=false;
-    float timer = 0;
+    float timer = 30;
     GameObject myBlock;
     [SerializeField] AudioSource aud;
    public List<AudioClip> audlist = new List<AudioClip>();
@@ -26,6 +27,10 @@ public class scencemanager : MonoBehaviour
         startbutton.gameObject.SetActive(true);
         RePlaybutton.gameObject.SetActive(false);
         RePlaySoundbutton.gameObject.SetActive(false);
+    }
+    private void Start()
+    {
+        Counttext.text = timer.ToString("0");
     }
     private void Update()
     {
@@ -39,23 +44,23 @@ public class scencemanager : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(1))
         {
-            myBlock.transform.rotation *= Quaternion.AngleAxis(-45f, transform.forward);
+            myBlock.transform.rotation *= Quaternion.AngleAxis(-15f, transform.forward);
         }
         if (isplay==true)
         {
-            timer+=Time.deltaTime;
+               timer-=Time.deltaTime;
+           
         }
-        if (timer > 30)
+        if (timer <= 0)
         {
             pasueGame();
         }
-        
+        timer = Mathf.Clamp(timer,0f, 100f);
     }
     void createBall()
     {
-        Vector2 pos = new Vector2(Camera.main.transform.position.x + Random.Range(0f, 1f), Camera.main.transform.position.y + Random.Range(0f, 1f));
-        Quaternion rot = Quaternion.Euler(0f, 0f, Random.Range(-90, 90));
-          GameObject temp  =Instantiate(ball, pos, rot);
+        //Quaternion rot = Quaternion.Euler(0f, 0f, Random.Range(-90, 90));
+          GameObject temp  =Instantiate(ball, Firepoint.position, Firepoint.rotation);
         temp.GetComponent<Rigidbody2D>().simulated = true;
         temp.transform.position = new Vector3(temp.transform.position.x, temp.transform.position.y, 1f);
     }
@@ -86,10 +91,11 @@ public class scencemanager : MonoBehaviour
     }
     private void LateUpdate()
     {
-        Counttext.text = Count.ToString();
+        Counttext.text = timer.ToString("0");
     }
     public void pasueGame()
     {
+        isplay = false;
         if (audlist.Count>0)
         {
             RePlaySoundbutton.gameObject.SetActive(true);
@@ -107,7 +113,7 @@ public class scencemanager : MonoBehaviour
         for (int i = 0; i < audlist.Count; i++)
         {
             aud.PlayOneShot(audlist[i]);
-            yield return new WaitForSeconds(.5f);
+            yield return new WaitForSeconds(audlist[i].length);
         }
     }
 
